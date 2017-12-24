@@ -6,40 +6,73 @@ This file contains a number of front-end interview questions that can be used wh
 
 ## Table of Contents
 
-  1. [General Questions](#general-questions)
-  1. [HTML Questions](#html-questions)
-  1. [CSS Questions](#css-questions)
-  1. [JS Questions](#js-questions)
-  1. [Testing Questions](#testing-questions)
-  1. [Performance Questions](#performance-questions)
-  1. [Network Questions](#network-questions)
-  1. [Coding Questions](#coding-questions)
-  1. [Fun Questions](#fun-questions)
+1. [General Questions](#general-questions)
+1. [HTML Questions](#html-questions)
+1. [CSS Questions](#css-questions)
+1. [JS Questions](#js-questions)
+1. [Testing Questions](#testing-questions)
+1. [Performance Questions](#performance-questions)
+1. [Network Questions](#network-questions)
+1. [Coding Questions](#coding-questions)
+1. [Fun Questions](#fun-questions)
 
 ## Getting Involved
 
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
+1. [Contributors](#contributors)
+1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
+1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
 
 #### General Questions:
 
 * What did you learn yesterday/this week?
+
+> graphql mutation
+
 * What excites or interests you about coding?
+
+> Give your the ability, power to make your imagine true.
+> Able to fast prototyping, scaling up, and not limited a lot by hardware.
+
 * What is a recent technical challenge you experienced and how did you solve it?
+
+> Auto deploy the api service of my side project on a linode machine.
+
+> First try using jenkins, and finally learned that only gitbook is needed and enough.
+
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
+
+> vscode, git, docker, ci
+
 * Which version control systems are you familiar with?
+
+> git
+
 * Can you describe your workflow when you create a web page?
+
+> create-react-app > deploy to netlify
+
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
+
+> cdn?
+
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+
+> If there is editor config setted, just use it for auto formatting. If not, set it down or discuss with ppl for choosing one and setting it down
+
 * Describe how you would create a simple slideshow page.
+
+> statis site generator + css framework, gastby.js + netlify + bluma/bootstrap
+
 * If you could master one technology this year, what would it be?
+
+>
+
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
@@ -49,6 +82,12 @@ This file contains a number of front-end interview questions that can be used wh
 #### HTML Questions:
 
 * What does a `doctype` do?
+
+> Tell browser how to compile the code.
+> Without the DOCTYPE you are forcing the browsers to render in Quirks Mode.
+> Informs the browser which version of HTML (or XML) you used to write the document. Doctype is a declaration, not a tag; you can also refer to it as "document type declaration", or "DTD" for short.
+> Quirks Mode and Standards Mode. https://goo.gl/8R2XaG
+
 * What's the difference between full standards mode, almost standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
@@ -67,6 +106,11 @@ This file contains a number of front-end interview questions that can be used wh
 
 * What is the difference between classes and IDs in CSS?
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+
+> reset do the reset, normalize do the compensation for those needed
+> es:
+> normalizing
+
 * Describe Floats and how they work.
 * Describe z-index and how stacking context is formed.
 * Describe BFC(Block Formatting Context) and how it works.
@@ -74,6 +118,9 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain CSS sprites, and how you would implement them on a page or site.
 * What are your favourite image replacement techniques and which do you use when?
 * How would you approach fixing browser-specific styling issues?
+
+> rewrite with another solution
+
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
 * What are the different ways to visually hide content (and make it available only for screen readers)?
@@ -88,20 +135,27 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain how a browser determines what elements match a CSS selector.
 * Describe pseudo-elements and discuss what they are used for.
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
-* What does ```* { box-sizing: border-box; }``` do? What are its advantages?
+* What does `* { box-sizing: border-box; }` do? What are its advantages?
+
+> maker all dom's box-sizing to be border-box
+> so that, width and height will not be affected by padding and marging
+
 * List as many values for the display property that you can remember.
 * What's the difference between inline and inline-block?
 * What's the difference between a relative, fixed, absolute and statically positioned element?
-* The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
+* The 'C' in CSS stands for Cascading. How is priority determined in assigning styles (a few examples)? How can you use this system to your advantage?
 * What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 * Have you played around with the new CSS Flexbox or Grid specs?
 * How is responsive design different from adaptive design?
 * Have you ever worked with retina graphics? If so, when and what techniques did you use?
-* Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
+* Is there any reason you'd want to use `translate()` instead of _absolute positioning_, or vice-versa? And why?
 
 #### JS Questions:
 
 * Explain event delegation
+
+> JavaScript event delegation is a simple technique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
+
 * Explain how `this` works in JavaScript
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
@@ -132,9 +186,11 @@ This file contains a number of front-end interview questions that can be used wh
 * What is the difference between `==` and `===`?
 * Explain the same-origin policy with regards to JavaScript.
 * Make this work:
+
 ```javascript
-duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
+
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
@@ -185,33 +241,42 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 
 #### Coding Questions:
 
-*Question: What is the value of `foo`?*
+_Question: What is the value of `foo`?_
+
 ```javascript
-var foo = 10 + '20';
+var foo = 10 + "20";
 ```
 
-*Question: What will be the output of the code below?*
+_Question: What will be the output of the code below?_
+
 ```javascript
 console.log(0.1 + 0.2 == 0.3);
 ```
 
-*Question: How would you make this work?*
+_Question: How would you make this work?_
+
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
 
-*Question: What value is returned from the following statement?*
+_Question: What value is returned from the following statement?_
+
 ```javascript
-"i'm a lasagna hog".split("").reverse().join("");
+"i'm a lasagna hog"
+  .split("")
+  .reverse()
+  .join("");
 ```
 
-*Question: What is the value of `window.foo`?*
+_Question: What is the value of `window.foo`?_
+
 ```javascript
-( window.foo || ( window.foo = "bar" ) );
+window.foo || (window.foo = "bar");
 ```
 
-*Question: What is the outcome of the two alerts below?*
+_Question: What is the outcome of the two alerts below?_
+
 ```javascript
 var foo = "Hello";
 (function() {
@@ -221,36 +286,40 @@ var foo = "Hello";
 alert(foo + bar);
 ```
 
-*Question: What is the value of `foo.length`?*
+_Question: What is the value of `foo.length`?_
+
 ```javascript
 var foo = [];
 foo.push(1);
 foo.push(2);
 ```
 
-*Question: What is the value of `foo.x`?*
+_Question: What is the value of `foo.x`?_
+
 ```javascript
-var foo = {n: 1};
+var foo = { n: 1 };
 var bar = foo;
-foo.x = foo = {n: 2};
+foo.x = foo = { n: 2 };
 ```
 
-*Question: What does the following code print?*
+_Question: What does the following code print?_
+
 ```javascript
-console.log('one');
+console.log("one");
 setTimeout(function() {
-  console.log('two');
+  console.log("two");
 }, 0);
-console.log('three');
+console.log("three");
 ```
 
-*Question: What is the difference between these four promises?*
+_Question: What is the difference between these four promises?_
+
 ```javascript
-doSomething().then(function () {
+doSomething().then(function() {
   return doSomethingElse();
 });
 
-doSomething().then(function () {
+doSomething().then(function() {
   doSomethingElse();
 });
 
@@ -258,7 +327,6 @@ doSomething().then(doSomethingElse());
 
 doSomething().then(doSomethingElse);
 ```
-
 
 #### Fun Questions:
 
@@ -269,9 +337,8 @@ doSomething().then(doSomethingElse);
 * What's your favorite feature of Internet Explorer?
 * How do you like your coffee?
 
-
 #### Contributors:
 
-This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
+This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano) [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
 
 It has since received contributions from over [100 developers](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors).

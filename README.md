@@ -164,6 +164,11 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
   * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
+
+> https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
+> Closures are frequently used in JavaScript for object data privacy, in event handlers and callback functions, and in partial applications, currying, and other functional programming patterns.
+> Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
+
 * Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)

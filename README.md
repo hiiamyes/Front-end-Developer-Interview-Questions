@@ -187,6 +187,12 @@ This file contains a number of front-end interview questions that can be used wh
 > `fun.call(thisArg[, arg1[, arg2[, ...]]])`
 
 * Explain `Function.prototype.bind`.
+
+> Hard Binding
+> Unfortunately, explicit binding alone still doesn't offer any solution to the issue mentioned previously, of a function "losing" its intended this binding, or just having it paved over by a framework, etc.
+> Since hard binding is such a common pattern, it's provided with a built-in utility as of ES5: Function.prototype.bind.
+> bind(..) returns a new function that is hard-coded to call the original function with the this context set as you specified.
+
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain Ajax in as much detail as possible.

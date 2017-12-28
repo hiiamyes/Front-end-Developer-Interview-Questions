@@ -185,6 +185,9 @@ This file contains a number of front-end interview questions that can be used wh
   * If so, what libraries have you used?
 * Explain "hoisting".
 * Describe event bubbling.
+> [Event Propagation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#Example_5:_Event_Propagation)
+> `event.stopPropagation();`
+
 * What's the difference between an "attribute" and a "property"?
 * Why is extending built-in JavaScript objects not a good idea?
 * Difference between document load event and document DOMContentLoaded event?

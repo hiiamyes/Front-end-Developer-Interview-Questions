@@ -185,8 +185,13 @@ This file contains a number of front-end interview questions that can be used wh
   * If so, what libraries have you used?
 * Explain "hoisting".
 * Describe event bubbling.
-> [Event Propagation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#Example_5:_Event_Propagation)
-> `event.stopPropagation();`
+
+[Event Propagation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#Example_5:_Event_Propagation)
+
+> `event.stopPropagation()` stops the move upwards, but on the current element all other handlers will run.
+> `event.stopImmediatePropagation()` stops the bubbling and prevent handlers on the current element from running.
+
+![event flow](https://javascript.info/article/bubbling-and-capturing/eventflow.png)
 
 * What's the difference between an "attribute" and a "property"?
 * Why is extending built-in JavaScript objects not a good idea?

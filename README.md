@@ -158,6 +158,9 @@ This file contains a number of front-end interview questions that can be used wh
 
 * Explain how `this` works in JavaScript
 * Explain how prototypal inheritance works
+
+> `[[Prototype]]`
+
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
@@ -175,6 +178,14 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
+
+> Explicit Binding
+> They both take, as their first parameter, an object to use for the this , and then invoke the function with that this specified.
+> With respect to this binding, call(..) and apply(..) are identical.
+> The fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
+> `func.apply(thisArg, [argsArray])`
+> `fun.call(thisArg[, arg1[, arg2[, ...]]])`
+
 * Explain `Function.prototype.bind`.
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?

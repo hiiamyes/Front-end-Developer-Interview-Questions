@@ -59,7 +59,11 @@ This file contains a number of front-end interview questions that can be used wh
 > cdn?
 
 * How many resources will a browser download from a given domain at a time?
+
   * What are the exceptions?
+
+> check http://www.browserscope.org/?category=network&v=1
+
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
 
@@ -245,7 +249,7 @@ article[data-columns='3'] {
 
 * Explain how prototypal inheritance works
 
-> http://lucybain.com/blog/2014/prototypal-inheritance/
+> http://lucybain.com/blog/2014/prototypal-inheritance/ > `[[Prototype]]`
 
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
@@ -276,7 +280,20 @@ article[data-columns='3'] {
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
+
+> Explicit Binding
+> They both take, as their first parameter, an object to use for the this , and then invoke the function with that this specified.
+> With respect to this binding, call(..) and apply(..) are identical.
+> The fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
+> `func.apply(thisArg, [argsArray])` > `fun.call(thisArg[, arg1[, arg2[, ...]]])`
+
 * Explain `Function.prototype.bind`.
+
+> Hard Binding
+> Unfortunately, explicit binding alone still doesn't offer any solution to the issue mentioned previously, of a function "losing" its intended this binding, or just having it paved over by a framework, etc.
+> Since hard binding is such a common pattern, it's provided with a built-in utility as of ES5: Function.prototype.bind.
+> bind(..) returns a new function that is hard-coded to call the original function with the this context set as you specified.
+
 * When would you use `document.write()`?
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain Ajax in as much detail as possible.
@@ -286,6 +303,14 @@ article[data-columns='3'] {
   * If so, what libraries have you used?
 * Explain "hoisting".
 * Describe event bubbling.
+
+[Event Propagation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#Example_5:_Event_Propagation)
+
+> `event.stopPropagation()` stops the move upwards, but on the current element all other handlers will run.
+> `event.stopImmediatePropagation()` stops the bubbling and prevent handlers on the current element from running.
+
+![event flow](https://javascript.info/article/bubbling-and-capturing/eventflow.png)
+
 * What's the difference between an "attribute" and a "property"?
 * Why is extending built-in JavaScript objects not a good idea?
 * Difference between document load event and document DOMContentLoaded event?
